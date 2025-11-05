@@ -11,7 +11,9 @@ app.use(bodyParser.json());
 // MongoDB Verbindung
 mongoose.connect('mongodb://localhost:27017/mein-buecherregal', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
 }).then(() => {
   console.log('MongoDB verbunden');
 }).catch(err => console.log(err));
