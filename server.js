@@ -4,12 +4,13 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mein-buecherregal';
 
 // Middleware
 app.use(bodyParser.json());
 
 // MongoDB Verbindung
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mein-buecherregal', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
