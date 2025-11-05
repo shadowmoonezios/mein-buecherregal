@@ -1,6 +1,6 @@
 {
   "name": "mein-buecherregal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Eine Anwendung zur Verwaltung von Büchern",
   "main": "index.js",
   "scripts": {
