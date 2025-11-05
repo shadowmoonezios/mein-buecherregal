@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/mein-buec
 }).catch(err => console.log(err));
 
 app.get('/', (req, res) => {
-  res.send('Willkommen bei Mein Bücherregal!');
+  res.send('Willkommen bei meinem Bücherregal!');
 });
 
 app.listen(PORT, () => {
